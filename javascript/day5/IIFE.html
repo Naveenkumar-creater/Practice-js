@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    //oddnumber 
+    <script>
+          
+        (function(i) {
+                if (i%2!==0) {
+                console.log("oddnumber"+i);
+            }else{
+                console.log("even number"+i)
+            }
+    })
+    ([2])
+    </script>
+    //sum of arrya 
+    <script>
+(function(a){
+    var total=0;
+    for(var i in a) { 
+        total += a[i];
+    }
+    return total;
+});
+
+var payChecks = [123,155,134, 205, 105]; 
+var weeklyPay= (payChecks);
+console.log(weeklyPay);
+    </script>
+    //prime number
+    <script>
+        function isPrime(n){ 
+            for(i=2;i<n;i++){
+                if (n % i ===0) {
+                    return 'is not primenumber'
+                }
+
+            }
+            
+             return ' prime number'
+        }
+        console.log(isPrime(13));
+    </script>
+    // palindrom
+    <script>
+      (function ( ) 
+{  
+// convert the string into an array using the string.split() function  
+const arrValue = string.split (''); //   
+  
+// use reverse() method to reverse the array values  
+const reveArrVal = arrValue.reverse();   
+  
+// use join() method to group the array values into the string  
+const revString = reveArrVal.join('');  
+  
+if (string == revString) // if string condition is equal to the revString  
+{  
+alert('It is a Palindrome string '); // print the Palindrome   
+}  
+else {  
+alert (' It is not a Palindrome string' ); // if the condition is not true.  
+}  
+}); 
+// take a string from the user  
+const string = prompt( ' Enter the string to check Palindrome ');  
+const value =  (string); // call the function  
+console.log(value);  
+    </script>
+    //remove duplicate in array
+    <script>
+  function uniq(a) {
+   return (new Set(a));
+}
+    let chars = [1,2,1,3,2,4,2];
+console.log(uniq(chars));
+    </script>
+    //retrun thevalue
+    <script>
+       (function (a, n, k)
+{
+ 
+    // If rotation is greater
+    // than size of array
+    k = k % n;
+ 
+    for (let i = 0; i < n; i++) {
+        if (i < k) {
+ 
+            // Printing rightmost
+            // kth elements
+            document.write(a[n + i - k] + " ");
+        }
+        else {
+ 
+            // Prints array after
+            // 'k' elements
+            document.write((a[i - k]) + " ");
+        }
+    }
+    document.write("<br>");
+});
+ 
+// Driver code
+let Array = [1, 2, 3, 4, 5];
+let N = Array.length;
+let K = 2;
+arrey(Array, N, K);
+    </script>
+    <script>
+     function getArraySum(nums1, nums2) {
+  let sol = 0;
+  for(i=0;i<num2.length;i++){
+  num1.push(num2[i]);
+  }
+  num1.sort(function(a,b) {
+      return a-b;
+  });
+   let middle=(num1.length/2);
+   let middlenum=middle-1;
+   let ans=(num1[middle]+num1[num1.length/2])/2;
+   return console.log(ans);
+};let num1=[1,2,4,5,6]
+  let num2=[3,7,8,9,11]
+  getArraySum(num1,num2)
+    </script>
+<script>
+ 
+<script>
+(function (str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  return str.join(' ');
+});
+console.log(("GEEKS FOR GEEKS"));
+</script>
+</script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1 <script>
+        let a="";
+        let b="";
+        let c="";
+        let d="";
+        let e=(a,b,c,d);
+        console.log(e);
+    </script>
+    2 <script>
+        var myvar= 1;
+         console.log("myvar");
+    </script>
+    3 <script>
+    let person =[{
+        firstname:"naveen",
+        lastname:"kumar",
+        age:24,
+        country:"india"
+    }];
+    for(let key of person){
+        console.log(key);
+    }
+;
+    </script>
+    4 <script>
+      
+       let firstname="naveen";
+          lastname ="kumar";
+               age=24;
+        country="india"
+        console.log(firstname+","+lastname+","+age+","+country);
+    
+
+    </script>
+    5 <script>
+var myvariable = 1;  // number value
+
+myvariable = 'one'; // string value
+
+myvariable ; // undefined value
+
+myvariable = true; // Boolean value
+
+myvariable = null; // null value
+    </script>
+
+    6 <script>
+
+let value=parseInt('100');
+let num=Number('120');
+console.log(value,num);
+    </script>
+   7 <script>
+         false||"anbu"//true
+         false||"0"//true
+         false||3//true    
+         false||false//false
+         false||""//false
+         false||undefined//false
+    </script>
+    8 <script>
+       let squre = 3**2;
+       console.log(squre);
+    </script>
+    9 <script>
+var num1 = 25;
+var num2 = 50;
+var temp =0;
+console.log("<br>Before Swap, num1 = " +num1+" num2 = "+num2);
+temp=num1;
+num1=num2;
+num2=temp;
+console.log("After Swap, num1 = " +num1+" num2 = "+num2);
+    </script>
+    10 <script>
+        var number1=1;
+        var number2=3;
+        var number3=5;
+        console.log(number1+number2+number3);
+    </script>
+    11 <script>
+        function convertToF(celsius) {
+  let fahrenheit = celsius * 9/5 + 32
+  // return the variable fahrenheit as the answer
+  console.log(fahrenheit);
+}
+
+convertToF(30);
+    </script>
+    12 <script>
+        function getMiles(meters) {
+     let miles= meters*0.000621371192;
+     console.log(miles);
+}
+function getMeters(miles) {
+     let meters= miles*1609.344;
+     console.log(meters);
+}
+getMiles(1)
+getMeters(2);
+    </script>
+    13 <script>
+        function getkg(pound) {
+            let kg= pound*0.45359237;
+            console.log(kg)  
+        }
+        getkg(2)
+     
+    </script>
+    //ang in batting scores
+    <script>
+        function avg(score,match,notout){
+            let run =score;
+            let out=match-notout;
+            let average=(run/out);
+            if(out==0){
+                return NA
+            }else{
+                return average;
+            }
+        }
+        console.log(avg(15000,250,50));
+    </script>
+    Calculate five test scores and print their average
+    <script>
+        function average(arr) {
+            var sum = 0;
+     for (var number of arr) { sum += number;  }
+          let avg = sum / arr.length;
+             return avg
+        }let scoores=[50,75,80,120];
+        console.log(average(scoores))
+    </script>
+    /* Javascript program to find the power of any number by using Math.pow() function */
+  <script>
+var f = 8;
+    e = 4;
+    // finding power of base value by equiping exponent value
+    r = Math.pow(f, e);
+    console.log(r)
+
+  </script>
+  //Calculate Simple Interest formula (p*n*r)/100; 
+  <script>
+      function si(p,n,r) {
+          let Si=(p*n*r)/100;
+          return Si;
+      }
+      console.log(si(10000,1,2));
+  </script>
+  //Calculate area of an equilateral triangle (1.73*a*a)/4
+  <script>
+            function area(a) {
+          let area_=(1.73*a*a)/4;
+          return area_;
+      }
+      console.log(area(10));
+  </script>
+Area Of Isosceles Triangle (1/2*b*h)
+<script>
+       function isarea(b,h) {
+          let isarea_=(1/2*b*h);
+          return isarea_;
+      }
+      console.log(isarea(10,15));
+</script>
+//Volume Of Sphere 4/3*3.14*r*3
+<script>
+    function sphere(r) {
+          let volum_=(4/3*3.14*r**3);
+          return volum_;
+      }
+      console.log(sphere(10));
+</script>
+    //Volume Of Prism v=bh;
+    <script>
+          function prism(b,h) {
+          let prism_=(b*h);
+          return prism_;
+      }
+      console.log(prism(10,15));
+    </script>
+    //Find area of a triangle.
+    <script>
+         function triangle(b,h) {
+          let vol =(1/2*b*h);
+          return vol;
+      }
+      console.log(triangle(10,15));
+    </script>
+    //Give the Actual cost and Sold cost, Calculate Discount Of Product d=(L-s/L)*100
+    <script>
+        function discount(l,s) {
+         let discount_=(l-s)/l*100;
+         return discount_;
+     }
+     console.log(discount(150,50));
+   </script>
+   Given their radius of a circle and find its diameter, circumference and area
+   A=3.14*r**2,  D=2r,C=2*3.14*r
+   <script>
+       function circle(r) {
+           let A=3.14*r**2;
+           let D=2*r;
+           let C= 2*Math.PI*r;
+               console.log(`Area ${A},diameter ${D},circumference ${C}`);  
+       }circle(5);
+   </script>
+   //Given two numbers and perform all arithmetic operations.(+,-,/,*,%)
+   <script>
+    function arithmatic(a,b) {
+        let A=a+b;
+        let B=a-b;
+        let C=a*b;
+        let D=a/b;
+        let E=a%b;     
+            console.log(`plus ${A},mines ${B},int ${C},dived ${D},modules ${E}`);  
+    }arithmatic(5,7);
+</script>
+Display the asterisk pattern as shown below(No loop needed):
+*****
+<script>
+    let F='*****';
+    console.log(F);
+    console.log(F);
+    console.log(F);
+     console.log(F);
+     console.log(F);
+</script>
+a consumer consumes 100 watts per hour daily for one month. 
+Calculate the total energy bill of that consumer if per unit rate is 10?
+<script>
+ function calculateBill(w,d,h)
+{
+     
+   let units= w*0.001*h*d;
+    if (units <= 100)
+    {
+        return units * 10;
+    }
+    else if (units <= 200)
+    {
+        return (100 * 10)
+            + (units - 100)
+                  * 15;
+    }
+    else if (units <= 300)
+    {
+        return (100 * 10)
+            + (100 * 15)
+            + (units - 200)
+                  * 20;
+    }
+    else if (units > 300)
+    {
+        return (100 * 10)
+            + (100 * 15)
+            + (100 * 20)
+            + (units - 300)
+                  * 25;
+                }
+    return 0;
+}
+     
+// Driver Code
+ 
+console.log(calculateBill(100,30,1));
+</script>
+Get the first item, the middle item and the last item of the array
+<script>
+    var array = ['Rodel', 'Mike', 'Ronnie', 'Betus'];
+    console.log(array[0]);
+    console.log(array[array.length-1]);
+    console.log(array[2]);
+</script>
+. Add your name to the end of the friends array, and add another name to beginning.
+<script>
+    var name_=['kumar','sudha','raja'];
+       name_.unshift('naveen');
+      name_.push('amma');
+      
+    console.log(name_);
+</script>
+Concat all the names the friends array and return as comma “,” seperated string.
+<script>
+     var model = ['Rodel', 'Mike', 'Ronnie', 'Betus'];
+     var lee=['kumar','sudha','raja'];
+     var user = model.concat(lee);
+        console.log(user.join(","));
+</script>
+. Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+<script>
+  var  fub = ['assd','qwu','uadujwe','jxn','eefd','dsjfjds','weufew','dsjfne'];
+    arrayLength = fub.length;
+    joined = fub.join('');
+    result = joined.length/ arrayLength;
+console.log(result);
+</script>
+Find the names and return the list starting with letter M.
+<script>
+const freinds = ['Mlman', 'Asad',  'Shahrukh', 'Aman'];
+const startsS = freinds.filter((freind) => freind.startsWith("M"));
+console.log(startsS);
+</script>
+Find the friends names who has letter (a) and return the list.
+<script>
+ var  flis = ['assd','qwu','uadujwe','jxn','eefd','dsjfjds','weufew','dsjfne'];
+      var star  =    flis.filter((fils) => fils.startsWith("a"));
+      console.log(star);
+</script>
+Find the name with max characters and return the name.
+<script>
+    var getMax = function (str) {
+ var max = 0,
+     maxChar = '';
+  str.split('').forEach(function(char){
+    if(str.split("").length > max) {
+        max = str.split(char).length;
+        maxChar = char;
+     }
+  });
+  return maxChar;
+};
+let max=['Mlman', 'Asad',  'Shahrukh', 'Aman'];
+console.log(getMax(max))
+</script>
+
+</body>
+</html>
